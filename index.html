@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<!-- Thanks for checking my code! If you spot any bad practices or have suggestions, send me an email! -->
+<head>
+	<meta charset="UTF-8">
+	<title>Richard G</title>
+	
+	<meta name="theme-color" content="#000">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="css/styles.css">
+	<link href='https://fonts.googleapis.com/css?family=Comfortaa:700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<canvas id="starfield"></canvas>
+	<div id="navbar" class="collapsed">
+		<a onclick="expandMenu()" id="arrowlink">
+		<img src="images/down.svg" id="arrow">
+		<div id="menutext">menu</div>
+		</a><a href="#description">
+		<img src="images/about.svg">
+		about
+		</a><a href="#about">
+		<img src="images/skills.svg">
+		skills
+		</a><a href="#projectstitle">
+		<img src="images/projects.svg">
+		projects
+		</a><a href="#footer">
+		<img src="images/contact.svg">
+		contact
+		</a>
+	</div>
+	<header id="header">
+		<div id="logoholder">
+			<canvas id="logo"></canvas>
+		</div>
+		<div id="description">
+			<h2>Richard Gilbert.</h2>
+			Web Developer. <br><br>
+			Hey, I'm Richard, a Gold Coast web developer. I have experience with Web, Android, Pebble and Windows development. 
+			I'm patient, adaptable, and have an interest in design and UX. :)
+			<!--<div id="face">
+			</div>-->
+		</div>
+	</header>
+	
+	<div id="about">
+		<div id="education">
+			<h2>I studied at</h2>
+			<h2>Griffith University</h2>
+			Bachelor of Information Technology (2015)<br>
+			Bachelor of Multimedia (2015)<br>
+		</div>
+		<h2>I have experience with</h2>
+		<div class="skills">
+			<span class="tag">HTML</span>
+			<span class="tag">CSS</span>
+			<span class="tag">JavaScript</span>
+			<span class="tag">PHP</span>
+			<span class="tag">MySQL</span>
+		</div>
+		<div class="skills">
+			<span class="tag">C++</span>
+			<span class="tag">Android</span>
+			<span class="tag">Pebble</span>
+		</div>
+	</div>
+	
+	<h1 id="projectstitle">
+			Project Examples
+	</h1>
+	<div id="projects">
+		
+		<div class="project" id="kiosk">
+		<img src="images/projects/kiosk.png">
+			<div class="text">
+				<h1>Photo Kiosk + Mobile Web App </h1>
+
+				Griffith University - Industry Affiliates Program. 
+				<br><br>
+				A photo kiosk system which allows you to print photos from a smartphone using a web app. 
+				
+				<button class="reveal" onclick="reveal(this, 'kioskdetails')">More Details</button>
+				<div class="details" id="kioskdetails">
+				<p>
+					I developed the project as four distinct components:
+</p><p>
+					<strong>Kiosk display:</strong> The video display on the kiosk would display a webpage. This page is dynamic and uses JavaScript and AJAX to change content and update based on current status and data returned from the server. Also handled video ad playback and printing confirmation.
+</p><p>
+					<strong>Web Server back-end:</strong> PHP handled communication between kiosks and smartphone via APIs and databases. MySQL
+</p><p>
+					<strong>Web App:</strong> The user would access a particular URL to access a particular kiosk. This would load the Web App. This app built with HTML/JS allows the user to select a photo from their phone, manipulatie the photo (crop) [Using HTML Canvas], and upload the file via AJAX. Mobile design
+</p><p>
+					<strong>Windows App:</strong> Finally the Windows Application grabs the photo from the server and sends the photo to the printer.
+</p>			
+			</div>
+			</div>
+		</div>
+		<div class="project" id="wear">
+		<img src="images/projects/xda.png">
+			<div class="text">
+				<h1>Notification Manager for Pebble</h1>
+				Grand Prize Winner - XDA/Pebble Developer Challenge
+				<br><br>
+				A notification manager for Pebble. View your Android notifications on your Pebble including images, icons and text.
+				<button class="reveal" onclick="reveal(this, 'weardetails')">More Details</button>
+				<div class="details" id="weardetails">
+				<p>
+				Prize included attending the Pebble Developer Retreat in Mountain View, California.
+				
+</p><p>
+					The application required an Android and Pebble component.
+</p><p>
+
+					<strong>Pebble: </strong>
+					Creating custom interface for the Pebble. Communication.
+
+</p><p>
+					<strong>Android: </strong>
+					Required rapid learning of Android software development within a 3 week time constraint
+					Implementation of Notification Listener Service on Android to receive and manage notifications.
+</p><p>
+					<strong>Communication: </strong>
+					Transferring text and data between phone and watch using the limited messaging system.
+					Optimizing image data for the Pebble display (dithering) and to fit into small data packets.
+					
+				</p>
+				</div>
+			</div>
+		</div>
+	
+	
+	
+		<div class="project">
+			<img src="images/projects/pebble.png">
+			<div class="text">
+				<h1>Web App: Pebble 3.0 Concept</h1>
+				Interactive design concept illustrating ideas for new Pebble OS features. Javascript, Responsive Layout.<br>
+				Check it out 
+				<a href="http://googledrive.com/host/0B6y59waHe-KXdnRJVndwMlQ0RjQ/pebble3.html" target="_blank">here.</a>
+			</div>
+		</div>
+		<div class="project">
+		<img src="images/projects/concepts.png">
+			<div class="text">
+				<h1>Image Sharing: Pebble Concepts</h1>
+				Community website for sharing images of Pebble App ideas. Developed in PHP. <br>
+				Featured by Pebble in <a href="https://www.kickstarter.com/projects/597507018/pebble-e-paper-watch-for-iphone-and-android/posts/429479" target="_blank">Kickstarter Update 34.</a> 
+			</div>
+		</div>
+		<div class="project">
+		<img src="images/projects/steam.png">
+			<div class="text">
+				<h1>Steamoven Design&Art </h1>
+				Website developed based on design and images supplied.<br>
+				Check it out <a href="http://steamovendesign.com" target="_blank">here.</a>
+			</div>
+		</div>
+		<div class="project">
+		<img src="images/projects/gant.png">
+			<div class="text">
+				<h1>Tom Gant Illustrator</h1>
+				Website developed based on design and images supplied.
+			</div>
+		</div>
+		
+	.
+	</div>
+	
+	<div id="clouds">
+		<div id="cl1" class="cloud"></div>
+		<div id="cl2" class="cloud"></div>
+		<div id="cl3" class="cloud"></div>
+		<div id="cl4" class="cloud"></div>
+		<div id="cl5" class="cloud"></div>
+	</div>
+	<canvas id="skyline"> 
+	</canvas>
+	<footer id="footer">
+	
+		<h1>Contact Me!</h1>
+		<br>
+		<div class="contactinfo">
+			<div class="contacttext">0421 652 345</div><a href="tel:0421652345" id="phone"></a>
+		</div>
+		<div class="contactinfo">
+			<div class="contacttext">me@richardg.me</div><a href="mailto:me@richardg.me" id="email"></a>
+		</div>
+		<br>
+		<a href="Richard Gilbert Resume.pdf" target="_blank" download>Resume</a>
+		<a href="http://linkedin.com/in/richardgg" target="_blank">LinkedIn</a>
+	</footer>
+	
+	<script src="js/starfield.js"></script>
+	<script src="js/animlogoclass.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>
